@@ -32,7 +32,7 @@ struct MenuView: View {
             
         case .abrirApps: AbrirAppsView()
         case .compartir: CompartirView()
-        case .enlacesPropios: Text("Enlaces propios (proximamente)")
+        case .enlacesPropios: EnlacesPropiosView()
         case .portapapeles: Text("Portapapeles (proximamente)")
         }
     }
