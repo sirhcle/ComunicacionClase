@@ -30,7 +30,7 @@ struct MenuView: View {
     func destino(para ejemplo: Ejemplo) -> some View {
         switch ejemplo {
             
-        case .abrirApps: Text("Abrir otras apps (proximamente)")
+        case .abrirApps: AbrirAppsView()
         case .compartir: Text("Compartir (proximamente)")
         case .enlacesPropios: Text("Enlaces propios (proximamente)")
         case .portapapeles: Text("Portapapeles (proximamente)")
