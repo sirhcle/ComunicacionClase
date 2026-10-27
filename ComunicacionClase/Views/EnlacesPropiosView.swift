@@ -14,7 +14,9 @@ struct EnlacesPropiosView: View {
                 ForEach(Ejemplo.allCases.filter { $0 != .enlacesPropios }) { ejemplo in
                     if let url = EnlaceProfundoManager.shared.url(para: ejemplo) {
                         Button {
-                            openURL(url)
+                            openURL(url) { aceptado in
+                                print("openURL \(url) → \(aceptado)")
+                            }
                         } label: {
                             VStack(alignment: .leading) {
                                 Label(ejemplo.titulo, systemImage: ejemplo.icono)

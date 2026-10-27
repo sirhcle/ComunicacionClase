@@ -23,6 +23,10 @@ struct MenuView: View {
             .navigationDestination(for: Ejemplo.self) { ejemplo in
                 destino(para: ejemplo)
             }
+        }.onOpenURL { url in
+            print("onOpenURL recibió: \(url)")
+            viewModel.abrir(url)
+
         }
     }
     
