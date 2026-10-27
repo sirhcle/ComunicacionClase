@@ -31,7 +31,7 @@ struct MenuView: View {
         switch ejemplo {
             
         case .abrirApps: AbrirAppsView()
-        case .compartir: Text("Compartir (proximamente)")
+        case .compartir: CompartirView()
         case .enlacesPropios: Text("Enlaces propios (proximamente)")
         case .portapapeles: Text("Portapapeles (proximamente)")
         }
